@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "permanentdamage",
+	"version": "${version}",
+	"name": "Permanent Damage",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Mohammad Faizan"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/permanentdamage/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"in.mohammadfaizan.mods.permanentdamage.PermanentDamage"
+		],
+		"client": [
+			"in.mohammadfaizan.mods.permanentdamage.PermanentDamageClient"
+		],
+		"fabric-datagen": [
+			"in.mohammadfaizan.mods.permanentdamage.PermanentDamageDataGenerator"
+		]
+	},
+	"mixins": [
+		"permanentdamage.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"java": ">=21",
+		"minecraft": "~1.21.5",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
